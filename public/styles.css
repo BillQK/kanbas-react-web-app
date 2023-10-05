@@ -11,9 +11,6 @@ body * {
   color: green;
   background-color: yellow;
 }
-
-
-
 .wd-flex-row-container {
   display: flex;
   flex-direction: row;
