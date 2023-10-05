@@ -1,0 +1,6 @@
+table > tbody > tr > td:nth-child(1) {
+  color: #ff0000;
+}
+.custom-input-group {
+  padding: 10px;
+}

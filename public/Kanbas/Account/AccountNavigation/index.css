@@ -1,0 +1,48 @@
+.wd-account-navigation {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 85px;
+    margin: 0px;
+    box-sizing: none;
+}
+
+.wd-kanbas-navigation {
+    background-color: rgb(5, 5, 5);
+    list-style: none;
+    padding: 0px;
+    width: 80px;
+    margin: 0px;
+    height: 100vh;
+}
+.wd-profile-name {
+    display: inline-block;
+}
+.top-icon {
+  position: absolute;
+  z-index: 9999;
+}
+.wd-account-navigation li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wd-account-navigation li.wd-active {
+    border-left: 2px solid black;
+}
+
+.wd-account-navigation li.wd-active a {
+    color: black;
+}
+
+.wd-account-navigation a {
+    color: red;
+
+}
+
+body .row>* {
+    padding-left: 0;
+}

@@ -1,0 +1,44 @@
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+
+.top-icon {
+  margin-right: 5px; /* Adjust the margin as needed */
+  position: relative;
+  top: 4px;
+}
+.btn-group {
+  left: 80vh;
+  margin: 10px;
+}
+
+.list-group {
+  padding-right: 10px;
+}
+
+.top-bar-container .breadcrumb .breadcrumb-item a {
+  color: red;
+}
+
+.list-group i {
+  float: right;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
+hr {
+  width: 130vh;
+}
+
+.course-status li {
+  list-style-type: none;
+  position: relative;
+  right: 30px;
+  padding: 2px;
+}
+.course-status li a {
+  width: 30vh;
+  text-align: left;
+}

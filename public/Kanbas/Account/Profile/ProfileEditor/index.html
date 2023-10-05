@@ -1,93 +1,155 @@
-<table width="100%">
-  <tbody>
-    <tr>
-      <td valign="top">
-        <ul>
-          <li><a href="/Kanbas/Account/index.html">Account</a></li>
-          <li><a href="#">DashBoard</a></li>
-          <li>
-            <a href="/Kanbas/Courses/Home/index.html">Courses</a>
-          </li>
-          <li><a href="#">Calender</a></li>
-          <li><a href="#">Inbox</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Studio</a></li>
-          <li><a href="#">Commons</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
-      </td>
-      <td valign="top">
-        <ul>
-          <li><a href="#">Notifications</a></li>
-          <li><a href="../index.html">Profile</a></li>
-          <li><a href="#">Files</a></li>
-          <li><a href="#">Setting</a></li>
-          <li><a href="#">ePortfolios</a></li>
-          <li><a href="#">Shared Content</a></li>
-          <li><a href="#">The Hub</a></li>
-          <li><a href="#">Qwickly Course Tools</a></li>
-          <li><a href="#">Global Annoucements</a></li>
-        </ul>
-      </td>
-      <td>
-        <form action="../index.html">
-        <h1>Jose Annunziato</h1>
-        Name:*<input type="text" name="name" value="Jose Annunziato" />
-        Pronouns:<select>
-          <option value="">None</option>
-        </select>
-        <br /><br />
-        Title: <input type="text" /><br />
-        <h2>Contact</h2>
-        <p>
-          No registered services, you can add some on the
-          <a href="#">settings</a> page.
-        </p>
-        <h2>Contact</h2>
-        <p>
-          No registered services, you can add some on the
-          <a href="#">settings</a> page.
-        </p>
-        <h2>Biography</h2>
-        Faculty,Software Engineer, AI, Space, and renewables enthusiast. <br />
-        <textarea name="" id="" cols="30" rows="10">
-Faculty, Software Engineer, AI, Space, and renewables enthusiast</textarea
-        >
-        <br />
-        <h2>Links</h2>
-        <ul>
-          <li>
-            <a href="#">Youtube</a>
-            <p style="color: blue; display: inline">
-              Links to an external site
-            </p>
-          </li>
-        </ul>
-        <br />
-        <h4 style="display: inline; text-align: center">
-          &nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Title
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </h4>
-        <h4 style="display: inline">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL
-        </h4>
-        <br />
-        <input style="display: inline" type="text" value="Youtube" />
-        <p style="display: inline">&rarr;</p>
-        <input
-          style="display: inline"
-          type="text"
-          value="https://www.youtube.com"
-        />
-        <a href="#">Remove</a><br />
-        <button>Add another link</button><br />
-        <button>Cancel</button>
-        <button>Save Profile</button><br />
-        <button>Edit Profile</button>
-        <button>Cancel Editing</button>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<html>
+  <head>
+    <link href="../../../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link
+      href="../../../../vendors/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../AccountNavigation/index.css" />
+    <link rel="stylesheet" href="../../../KanbasNavigation/index.css" />
+    <link rel="stylesheet" href="index.css"/>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="d-block d-md-none">
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-1 wd-bg-color-black d-none d-md-block" style="width: 100px;">
+          <ul class="wd-kanbas-navigation">
+            <li>
+              <img src="/public/neu.png" alt="NEU Logo" />
+            </li>
+            <li class="wd-active">
+              <a href="../Account/index.html"
+                ><i style="color: rgb(8, 8, 8)" class="fas fa-user" aria-hidden="true"></i
+                >Account</a
+              >
+            </li>
+            <li >
+              <a href="#"
+                ><i class="fas fa-tachometer-alt" aria-hidden="true"></i>DashBoard</a
+              >
+            </li>
+            <li>
+              <a href="../Courses/Home/index.html">
+                <i class="fas fa-book" aria-hidden="true"></i>Courses</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-calendar-week" aria-hidden="true"></i>Calendar</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-inbox" aria-hidden="true"></i><br />Inbox</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-clock" aria-hidden="true"></i>History</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-network-wired" aria-hidden="true"></i>Studio</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-comment" aria-hidden="true"></i>Commons</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-question" aria-hidden="true"></i><br />Help</a>
+            </li>
+          </ul>
+          
+        </div>
+        <div class ="col-md-11">
+            <div class="row">
+              <div class="top-bar-container">
+                <i class="fas fa-bars top-icon"
+                  ><p class="wd-profile-name">&nbsp;Jose Annunziato's Profile</p>
+                </i>
+               
+              </div>
+                <hr style="margin-top: 20px;">
+              <div class="col-md-1 wd-bg-color-black d-none d-md-block">
+                <ul class="wd-account-navigation">
+                  <li><a href="#">Notifications</a></li>
+                  <li class="wd-active"><a href="#">Profile</a></li>
+                  <li><a href="#">Files</a></li>
+                  <li><a href="#">Setting</a></li>
+                  <li><a href="#">ePortfolios</a></li>
+                  <li><a href="#">Shared Content</a></li>
+                  <li><a href="#">The Hub</a></li>
+                  <li><a href="#">Qwickly Course Tools</a></li>
+                  <li><a href="#">Global Annoucements</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 wd-bg-color-red wd-flex-grow-1">
+                <form class="d-flex">
+                  <div class="container-fluid square-container">
+                    <div class="row">
+                      <div class="col-md-1">
+                        <div class="icon-container">
+                          <i class="fas fa-user fa-4x"></i> <!-- Increase the size of the fa-user icon -->
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <h2 class="account-name">Jose Annunziato</h2> <!-- Account name -->
+                      </div>
+                      <div class="col-md-12">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="pronouns">Pronouns</label>
+                        <select class="form-select" id="pronouns">
+                          <option value="he/him">He/Him</option>
+                          <option value="she/her">She/Her</option>
+                          <option value="they/them">They/Them</option>
+                        </select>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" id="title">
+                      </div>
+                      <div class="col-md-12">
+                        <h2>Contact</h2>
+                        <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+                      </div>
+                      <div class="col-md-12">
+                        <h2>Biography</h2>
+                        <textarea class="form-control" rows="3" >Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
+                      </div>
+                      <div class="col-md-12">
+                        <h2>Links</h2>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="link1-title">Title</label>
+                            <input type="text" class="form-control" id="link1-title">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="link2-url">URL</label>
+                            <input type="text" class="form-control" id="link2-url">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <button class="btn btn-secondary"> Cancel
+                        </button>
+                      </div>
+                      <div class="col-md-6">
+                        <button class="btn btn-danger"> Save Profile
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary ml-3 rectangle-button"><i class="fas fa-pen"></i> &nbsp;</i>Cancel Editing</button>
+                </form>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
