@@ -1,12 +1,23 @@
-.breadcrumb-item {
+
+.top-bar-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.top-icon {
-  margin-right: 5px; /* Adjust the margin as needed */
-  position: relative;
-  top: 4px;
+.top-bar-container .breadcrumb {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0; /* Remove default margin */
+}
+
+
+/* Hide the button on smaller screens and show a smaller version of the menu or a dropdown */
+@media (max-width: 991.98px) {
+  .btn.btn-secondary.btn-light {
+      display: none;
+  }
+  /* Add styles for the smaller version of the menu or a dropdown here */
 }
 .btn-group {
   left: 80vh;
