@@ -94,7 +94,7 @@
             </div>
             <div class="col-md-1 wd-bg-color-black d-none d-md-block">
               <ul class="wd-course-navigation d-none d-md-block">
-                <li class="wd-active"><a href="/Kanbas/Home/index.html">Home</a></li>
+                <li class="wd-active"><a href="../Home/index.html">Home</a></li>
                 <li><a href="#">Modules</a></li>
                 <li><a href="#">Piazza</a></li>
                 <li><a href="#">Zoom Meetings</a></li>
@@ -115,27 +115,31 @@
               </ul>
             </div>
             <div class="col-md-9 wd-bg-color-red wd-flex-grow-1">
-                <button class="btn btn-secondary" >Collapse All</button>
-                <button class="btn btn-secondary">View Progress</button>
-                <div class="dropdown">
-                  <button
-                    class="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    id="publishDropdown"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Publish All
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="publishDropdown">
-                    <li><a class="dropdown-item" href="#">Option 1</a></li>
-                    <li><a class="dropdown-item" href="#">Option 2</a></li>
-                    <li><a class="dropdown-item" href="#">Option 3</a></li>
-                  </ul>
+              <div class = "float-end" style="position: relative; right: 8px;">
+                  <button class="btn btn-secondary" style="display: inline;">Collapse All</button>
+                  <button class="btn btn-secondary" style="display: inline;">View Progress</button>
+                  <div class="dropdown" style="display: inline;">
+                    <button
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      id="publishDropdown"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style="display: inline;"
+                    >
+                      Publish All
+                    </button>
+                    <ul class="dropdown-menu float-end" aria-labelledby="publishDropdown">
+                      <li><a class="dropdown-item" href="#">Option 1</a></li>
+                      <li><a class="dropdown-item" href="#">Option 2</a></li>
+                      <li><a class="dropdown-item" href="#">Option 3</a></li>
+                    </ul>
+                  </div>
+                  <button class="btn btn-danger " style="display: inline;">Module</button>
+                  <button class="btn btn-secondary " style="display: inline;"><i class="fas fa-ellipsis-v" aria-hidden="true"></i></button>
                 </div>
-                <button class="btn btn-danger">Module</button>
-                <button class="btn btn-secondary"><i class="fas fa-ellipsis-v" aria-hidden="true"></i></button>
-              <hr>
+                <hr style="position: relative; top: 10px;">
+                
               <ul class="list-group">
                 <li class="list-group-item list-group-item-secondary">
                   Week 0 - Intro
