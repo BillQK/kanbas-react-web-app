@@ -1,8 +1,9 @@
 import ModuleList from "./ModuleList";
+import ModuleToolBar from "./ModuleToolBar";
 function Modules() {
   return (
     <div>
-      <h2>Modules</h2>
+      <ModuleToolBar />
       <ModuleList />
     </div>
   );

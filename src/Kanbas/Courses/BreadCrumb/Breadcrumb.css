@@ -1,0 +1,24 @@
+.breadcrumb-item + .breadcrumb-item::before {
+  color: black;
+  font-size: 30px;
+}
+.breadcrumb {
+  align-items: center;
+  padding-left: 20px !important;
+  padding-top: 20px !important;
+}
+.breadcrumb-item a {
+  color: red;
+  font-size: 30px;
+  padding-left: 25px; /* Adjust spacing between icon and text */
+}
+
+.breadcrumb-item.active {
+  color: black;
+  font-size: 30px;
+}
+.breadcrumb-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Optional: To vertically align the items if they have different heights */
+}
