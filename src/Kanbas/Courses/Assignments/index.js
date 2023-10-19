@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
 import AssignmentToolBar from "./AssignmentToolBar/AssignmentToolBar";
-import { FaEllipsisV } from "react-icons/fa";
+import { FaEllipsisV, FaPlus } from "react-icons/fa";
 import { BsCheckCircleFill } from "react-icons/bs";
 import "./index.css";
 function Assignments() {
@@ -16,6 +16,9 @@ function Assignments() {
       <div className="assignment-list col-8 list-group">
         <AssignmentToolBar />
         <hr />
+        <li className="list-group-item-dark active">
+          Assignments <FaPlus size={20} />
+        </li>
         {courseAssignments.map((assignment) => (
           <Link
             key={assignment._id}
