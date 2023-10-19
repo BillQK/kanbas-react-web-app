@@ -1,0 +1,26 @@
+.course-status ul {
+  list-style-type: none;
+  padding: 0;
+  width: 40vh;
+}
+.course-status li {
+  padding: 5px;
+}
+
+.course-status .btn {
+  border-radius: 0 !important;
+  width: 100%;
+  text-align: left;
+  border: 1px solid rgb(118, 118, 118) !important;
+}
+a {
+  color: red;
+  text-decoration: none;
+}
+.course-status hr {
+  width: 77% !important;
+}
+
+.icon {
+  margin: 4px;
+}

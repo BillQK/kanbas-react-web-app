@@ -42,7 +42,7 @@ function KanbasNavigation() {
   };
 
   return (
-    <div className="wd-kanbas-navigation list-group">
+    <div className="wd-kanbas-navigation list-group d-none d-md-flex">
       <img
         src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png"
         alt="NEU Logo"

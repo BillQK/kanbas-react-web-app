@@ -1,0 +1,25 @@
+/* AssignmentToolBar.css */
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toolbar input {
+  padding: 5px;
+  flex: 1; /* takes available space */
+}
+
+.toolbar button {
+  padding: 5px 10px;
+}
+
+.toolbar .red-button {
+  background-color: red;
+  color: white;
+}
+
+.toolbar select {
+  padding: 5px;
+}

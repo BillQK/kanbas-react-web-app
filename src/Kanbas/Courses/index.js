@@ -13,18 +13,18 @@ function Courses() {
   const course = db.courses.find((course) => course._id === courseId);
   return (
     <>
-      <div className="row">
+      <div className="row flex-filled">
         <div className="col">
           <Breadcrumb course={course} />
         </div>
       </div>
       <div className="row">
-        <div className="col-3">
+        <div className="col-3 content">
           <CourseNavigation />
         </div>
-        <div className="col-9">
+        <div className="col-9 flex-fill content">
           <div
-            className="overflow-y-scroll bottom-0 end-0"
+            className="bottom-0 end-0"
             style={{
               left: "320px",
               top: "50px",

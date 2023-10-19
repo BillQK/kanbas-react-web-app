@@ -1,10 +1,10 @@
 import { BsCheckCircle } from "react-icons/bs";
 import { FaEllipsisV } from "react-icons/fa";
-
+import "./ModuleToolBar.css";
 function ModuleToolBar() {
   return (
     <div className="p-2 d-flex">
-      <div className="p-2">
+      <div className="p-2 flex-fill">
         <button
           className="btn btn-secondary btn-light"
           style={{ display: "inline" }}
@@ -12,7 +12,7 @@ function ModuleToolBar() {
           Collapse All
         </button>
       </div>
-      <div className="p-2">
+      <div className="p-2 flex-fill ">
         <button
           className="btn btn-secondary btn-light"
           style={{ display: "inline" }}
@@ -20,7 +20,10 @@ function ModuleToolBar() {
           View Progress
         </button>
       </div>
-      <div className="dropdown p-2" style={{ display: "inline", al: "center" }}>
+      <div
+        className="dropdown p-2 flex-fill"
+        style={{ display: "inline", al: "center" }}
+      >
         <button
           className="btn btn-secondary btn-light dropdown-toggle"
           type="button"
@@ -53,12 +56,12 @@ function ModuleToolBar() {
           </li>
         </ul>
       </div>
-      <div className="p-2">
+      <div className="p-2 flex-fill">
         <button className="btn btn-danger" style={{ display: "inline" }}>
           Module
         </button>
       </div>
-      <div className="p-2">
+      <div className="p-2 flex-fill">
         <button
           className="btn btn-secondary btn-light"
           style={{ display: "inline" }}

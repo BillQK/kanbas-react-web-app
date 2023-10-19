@@ -5,6 +5,8 @@
   height: 100vh;
   width: 100px;
   display: flex;
+  margin-bottom: -5000px;
+  padding-bottom: 5000px;
 }
 
 .wd-kanbas-navigation a {

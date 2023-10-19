@@ -8,10 +8,15 @@ const Breadcrumb = ({ course }) => {
     "--bs-breadcrumb-item-divider-width": "30px", // Set the width of the divider to match the icon size
   };
   const { pathname } = useLocation();
-  const pathSegments = pathname.split("/");
-  const currentDirectory =
-    pathSegments[pathSegments.length - 1] ||
-    pathSegments[pathSegments.length - 2];
+  const pathSegments = pathname
+    .split("/")
+    .filter((segment) => segment.trim() !== ""); // Filters out empty segments
+
+  // Define the current and parent directories based on the path segments
+  const currentDirectory = pathSegments[pathSegments.length - 1] || "";
+  const parentDirectory =
+    pathSegments.length > 4 ? pathSegments[pathSegments.length - 2] : "";
+
   return (
     <div className="breadcrumb-container">
       <div className="breadcrumb-wrapper">
@@ -21,6 +26,11 @@ const Breadcrumb = ({ course }) => {
             <li className="breadcrumb-item">
               <a href="/">{course.number}</a>
             </li>
+            {parentDirectory && (
+              <li className="breadcrumb-item">
+                <a href={`/${parentDirectory}`}>{parentDirectory}</a>
+              </li>
+            )}
             <li className="breadcrumb-item active" aria-current="page">
               {currentDirectory === "ZoomMeetings"
                 ? "Zoom Meetings"
@@ -34,4 +44,5 @@ const Breadcrumb = ({ course }) => {
     </div>
   );
 };
+
 export default Breadcrumb;

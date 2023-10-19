@@ -13,7 +13,7 @@ function Dashboard() {
       <div className="dashboard indent-left list-group">
         <div className="row">
           {courses.map((course) => (
-            <div className="col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxl-3">
+            <div className="col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxl-2">
               <Link
                 key={course._id}
                 to={`/Kanbas/Courses/${course._id}`}

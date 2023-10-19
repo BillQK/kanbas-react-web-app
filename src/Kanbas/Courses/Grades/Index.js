@@ -1,5 +1,6 @@
 import db from "../../Database";
 import { useParams } from "react-router-dom";
+import GradesToolBar from "./GradesToolBar";
 function Grades() {
   const { courseId } = useParams();
   const assignments = db.assignments.filter(
@@ -10,13 +11,13 @@ function Grades() {
   );
   return (
     <div>
-      <h1>Grades</h1>
-      <div className="table-responsive">
-        <table className="table">
+      <GradesToolBar />
+      <div className="table-responsive col-11">
+        <table className="table table-bordered table-secondary border-dark table-striped">
           <thead>
-            <th>Student Name</th>
+            <th className="text-danger">Student Name</th>
             {assignments.map((assignment) => (
-              <th>{assignment.title}</th>
+              <th className="text-danger">{assignment.title}</th>
             ))}
           </thead>
 
@@ -27,7 +28,7 @@ function Grades() {
               );
               return (
                 <tr>
-                  <td>
+                  <td className="text-danger">
                     {user.firstName} {user.lastName}
                   </td>
                   {assignments.map((assignment) => {

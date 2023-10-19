@@ -6,8 +6,8 @@ import Courses from "../../src/Kanbas/Courses";
 function Kanbas() {
   return (
     <div className="d-flex">
-      <KanbasNavigation className="d-none d-sm-block" />
-      <div className="container">
+      <KanbasNavigation />
+      <div className="w-100">
         <Routes>
           <Route path="/" element={<Navigate to="Dashboard" />} />
           <Route path="Account" element={<h1>Account</h1>} />
