@@ -1,13 +1,15 @@
 import { FaBars } from "react-icons/fa"; // Assuming you're using react-icons for the FaBars icon
 import "./Breadcrumb.css";
 import StudentViewButton from "../StudentViewButton";
-import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
+import { useLocation, useParams } from "react-router";
 const Breadcrumb = ({ course }) => {
   const breadcrumbStyle = {
     "--bs-breadcrumb-divider": "'>'", // Set the divider to '>'
     "--bs-breadcrumb-item-divider-width": "30px", // Set the width of the divider to match the icon size
   };
   const { pathname } = useLocation();
+  const { courseId } = useParams();
   const pathSegments = pathname
     .split("/")
     .filter((segment) => segment.trim() !== ""); // Filters out empty segments
@@ -24,11 +26,13 @@ const Breadcrumb = ({ course }) => {
           <ol className="breadcrumb">
             <FaBars className="breadcrumb-icon fa-2 text" size={30} />
             <li className="breadcrumb-item">
-              <a href="/">{course.number}</a>
+              <Link>{course.number}</Link>
             </li>
             {parentDirectory && (
               <li className="breadcrumb-item">
-                <a href={`/${parentDirectory}`}>{parentDirectory}</a>
+                <Link to={`/Kanbas/Courses/${courseId}/${parentDirectory}`}>
+                  {parentDirectory}
+                </Link>
               </li>
             )}
             <li className="breadcrumb-item active" aria-current="page">
