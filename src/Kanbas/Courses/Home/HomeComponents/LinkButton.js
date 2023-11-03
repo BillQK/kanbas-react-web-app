@@ -2,7 +2,7 @@
 function LinkButton({ text, icon, className }) {
   return (
     <li>
-      <a href="#" className={className}>
+      <a href="/" className={className}>
         {icon}
         {text}
       </a>

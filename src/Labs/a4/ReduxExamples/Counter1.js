@@ -1,5 +1,3 @@
-import { useState } from "react";
-import Counter2 from "./Counter2";
 import { useSelector, useDispatch } from "react-redux";
 import { setCount1 } from "./counter1Reducer";
 

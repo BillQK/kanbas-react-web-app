@@ -32,7 +32,7 @@ function ModuleToolBar() {
           aria-expanded="false"
           style={{ display: "inline" }}
         >
-          <BsCheckCircle className="text-success" />
+          <BsCheckCircle className="text-success checkmark" />
           Publish All
         </button>
         <ul
@@ -40,17 +40,17 @@ function ModuleToolBar() {
           aria-labelledby="publishDropdown"
         >
           <li>
-            <a className="dropdown-item" href="#">
+            <a className="dropdown-item" href="/">
               Option 1
             </a>
           </li>
           <li>
-            <a className="dropdown-item" href="#">
+            <a className="dropdown-item" href="/">
               Option 2
             </a>
           </li>
           <li>
-            <a className="dropdown-item" href="#">
+            <a className="dropdown-item" href="/">
               Option 3
             </a>
           </li>

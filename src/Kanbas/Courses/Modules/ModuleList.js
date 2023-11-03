@@ -19,13 +19,7 @@ function ModuleList() {
 
   return (
     <ul className="content-list list-group">
-      <li className="list-group-item">
-        <button
-          onClick={() => dispatch(addModule({ ...module, course: courseId }))}
-        >
-          Add
-        </button>
-        <button onClick={() => dispatch(updateModule(module))}>Update</button>
+      <li className="list-group-item d-flex justify-content-around">
         <input
           value={module.name}
           onChange={(e) =>
@@ -38,6 +32,18 @@ function ModuleList() {
             dispatch(setModule({ ...module, description: e.target.value }))
           }
         />
+        <button
+          className="btn btn-success"
+          onClick={() => dispatch(addModule({ ...module, course: courseId }))}
+        >
+          Add
+        </button>
+        <button
+          className="btn btn-primary"
+          onClick={() => dispatch(updateModule(module))}
+        >
+          Update
+        </button>
       </li>
 
       {modules &&
@@ -46,17 +52,22 @@ function ModuleList() {
           .map((module, index) => (
             <nav className="list-group-item justify-content-between">
               <div>
-                <button onClick={() => dispatch(setModule(module))}>
-                  Edit
-                </button>
-                <button onClick={() => dispatch(deleteModule(module._id))}>
-                  Delete
-                </button>
                 <h3>{module.name}</h3>
                 <p>{module.description}</p>
-                <p>{module._id}</p>
               </div>
               <div>
+                <button
+                  className="btn btn-success"
+                  onClick={() => dispatch(setModule(module))}
+                >
+                  Edit
+                </button>
+                <button
+                  className="btn btn-danger"
+                  onClick={() => dispatch(deleteModule(module._id))}
+                >
+                  Delete
+                </button>
                 <BsCheckCircleFill
                   size={20}
                   style={{ marginRight: "10px", color: "green" }}

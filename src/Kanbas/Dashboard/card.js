@@ -1,13 +1,17 @@
 import { MdEditNote } from "react-icons/md";
 import "./card.css";
-function Card({ course }) {
+function Card({ course, setCourse, deleteCourse, backgroundColor, openModal }) {
   return (
-    <div class="card">
-      <img
-        src="https://htmlcolorcodes.com/assets/images/colors/dark-blue-color-solid-background-1920x1080.png"
-        class="card-img-top"
-        alt="..."
-      />
+    <div className="card">
+      <div
+        className="card-img-top"
+        style={{
+          backgroundColor,
+          width: "100%",
+          height: "150px",
+        }}
+      ></div>
+
       <div class="card-body">
         <h5 class="card-title">{course.name}</h5>
         <p class="card-text">
@@ -15,6 +19,24 @@ function Card({ course }) {
         </p>
         <p class="card-text">202410_1 Fall 2023 Semester Full Term</p>
         <MdEditNote className="fas-1" />
+        <button
+          className="btn btn-danger"
+          onClick={(event) => {
+            event.preventDefault();
+            deleteCourse(course._id);
+          }}
+        >
+          Delete
+        </button>
+        <button
+          className="btn btn-primary"
+          onClick={(event) => {
+            event.preventDefault();
+            openModal(course);
+          }}
+        >
+          Edit
+        </button>
       </div>
     </div>
   );

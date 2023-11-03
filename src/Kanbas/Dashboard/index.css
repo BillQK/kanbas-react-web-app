@@ -5,3 +5,7 @@
 .indent-left {
   padding-left: 2vh !important;
 }
+.Add-btn {
+  float: right;
+  margin-right: 150px;
+}
