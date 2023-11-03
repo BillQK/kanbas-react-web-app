@@ -1,6 +1,6 @@
 import { MdEditNote } from "react-icons/md";
 import "./card.css";
-function Card({ course, setCourse, deleteCourse, backgroundColor, openModal }) {
+function Card({ course, deleteCourse, backgroundColor, openModal }) {
   return (
     <div className="card">
       <div

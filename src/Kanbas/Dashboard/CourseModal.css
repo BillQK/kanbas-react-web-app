@@ -1,0 +1,19 @@
+#custom-modal {
+  width: fit-content; /* Adjust as needed */
+  height: fit-content;
+  margin: 200px auto; /* Center the modal horizontally */
+  /* Add other styles as needed */
+}
+@media (max-width: 600px) {
+  .custom-modal {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+#custom-modal > input {
+  margin-bottom: 15px;
+}
+#custom-modal > button {
+  float: right;
+}

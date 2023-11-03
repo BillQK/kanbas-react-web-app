@@ -62,9 +62,6 @@ function Dashboard({
       </h2>
       <hr />
 
-      {/* <button onClick={addNewCourse}>Add</button>
-      <button onClick={updateCourse}>Update</button> */}
-
       <CourseModal
         course={course}
         setCourse={setCourse}
@@ -86,7 +83,6 @@ function Dashboard({
                 {
                   <Card
                     course={course}
-                    setCourse={setCourse}
                     deleteCourse={deleteCourse}
                     openModal={openModal}
                     backgroundColor={
