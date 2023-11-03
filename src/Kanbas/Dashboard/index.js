@@ -12,23 +12,23 @@ function Dashboard({
   updateCourse,
 }) {
   const colors = [
-    "red",
-    "blue",
-    "green",
-    "yellow",
-    "purple",
-    "cyan",
-    "magenta",
-    "teal",
-    "lime",
-    "pink",
-    "orange",
-    "violet",
-    "indigo",
-    "brown",
-    "grey",
-    "black",
-    "white",
+    "#1a1a1a", // Dark gray
+    "#0e4c92", // Dark blue
+    "#0b3d91", // Darker blue
+    "#08306b", // Navy blue
+    "#36454f", // Charcoal
+    "#800000", // Maroon
+    "#4a005e", // Dark purple
+    "#013220", // Dark green
+    "#492400", // Dark brown
+    "#7b3f00", // Darker brown
+    "#3c2f2f", // Coffee
+    "#1c313a", // Midnight blue
+    "#0d2b1e", // Dark forest green
+    "#5d001e", // Dark red
+    "#2f1b25", // Eggplant
+    "#1c0e22", // Blackcurrant
+    "#172a3a", // Denim dark
   ];
 
   const [isModalOpen, setIsModalOpen] = useState(false);
