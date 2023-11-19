@@ -7,9 +7,20 @@ import AssignmentEditor from "./Assignments/AssignmentEditors";
 import Assignment from "./Assignments";
 import Grades from "./Grades/Index";
 import Breadcrumb from "./BreadCrumb/Breadcrumb";
-function Courses({ courses }) {
+import { useState, useEffect } from "react";
+import axios from "axios";
+function Courses() {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  const URL = "http://localhost:4000/api/courses";
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(`${URL}/${courseId}`);
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   return (
     <>
       <div className="row flex-filled">
