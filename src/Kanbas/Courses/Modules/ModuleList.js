@@ -15,7 +15,6 @@ import {
 import * as client from "./client";
 function ModuleList() {
   const { courseId } = useParams();
-  console.log(courseId);
   const modules = useSelector((state) => state.ModulesReducer.modules);
   const module = useSelector((state) => state.ModulesReducer.module);
   const dispatch = useDispatch();
@@ -36,7 +35,7 @@ function ModuleList() {
   };
 
   const handleUpdateModule = async () => {
-    const status = await client.updateModule(module);
+    const status = client.updateModule(module);
     dispatch(updateModule(module));
   };
 
@@ -58,10 +57,7 @@ function ModuleList() {
         <button className="btn btn-success" onClick={handleAddModule}>
           Add
         </button>
-        <button
-          className="btn btn-primary"
-          onClick={() => dispatch(updateModule(module))}
-        >
+        <button className="btn btn-primary" onClick={handleUpdateModule}>
           Update
         </button>
       </li>

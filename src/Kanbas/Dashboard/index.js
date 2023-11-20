@@ -77,9 +77,9 @@ function Dashboard({
             <div className="col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxl-2">
               <Link
                 key={course._id.$oid}
-                to={`/Kanbas/Courses/${course._id.$oid}`}
+                to={`/Kanbas/Courses/${course.number}`}
                 className="list-group-item"
-              > 
+              >
                 {
                   <Card
                     course={course}

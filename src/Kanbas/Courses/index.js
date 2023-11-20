@@ -9,9 +9,10 @@ import Grades from "./Grades/Index";
 import Breadcrumb from "./BreadCrumb/Breadcrumb";
 import { useState, useEffect } from "react";
 import axios from "axios";
+const API_BASE = process.env.REACT_APP_API_BASE;
+const URL = `${API_BASE}/courses`;
 function Courses() {
   const { courseId } = useParams();
-  const URL = "http://localhost:4000/api/courses";
   const [course, setCourse] = useState({});
   const findCourseById = async (courseId) => {
     const response = await axios.get(`${URL}/${courseId}`);

@@ -1,6 +1,7 @@
 import { MdEditNote } from "react-icons/md";
 import "./card.css";
 function Card({ course, deleteCourse, backgroundColor, openModal }) {
+  console.log(course);
   return (
     <div className="card">
       <div
@@ -23,7 +24,7 @@ function Card({ course, deleteCourse, backgroundColor, openModal }) {
           className="btn btn-danger"
           onClick={(event) => {
             event.preventDefault();
-            deleteCourse(course._id);
+            deleteCourse(course._id.$oid);
           }}
         >
           Delete
