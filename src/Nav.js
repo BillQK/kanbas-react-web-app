@@ -21,6 +21,12 @@ function Nav() {
       <Link className="nav-link" to="/project">
         Project
       </Link>
+      <Link className="nav-link" to="/signin">
+        Sign In
+      </Link>
+      <Link className="nav-link" to="/signup">
+        Sign Up
+      </Link>
     </nav>
   );
 }

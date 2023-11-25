@@ -4,6 +4,9 @@ import Kanbas from "./Kanbas";
 import { HashRouter } from "react-router-dom";
 import { Routes, Route, Navigate } from "react-router";
 import Project from "./project";
+import Signin from "./users/signin";
+import Account from "./users/account";
+import UserTable from "./users/table";
 function App() {
   return (
     <div>
@@ -15,6 +18,10 @@ function App() {
             <Route path="/project/*" element={<Project />} />
             <Route path="/Labs/*" element={<Labs />} />
             <Route path="/Kanbas/*" element={<Kanbas />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/account" element={<Account />} />
+            <Route path="/admin/users" element={<UserTable />} />
+            <Route path="/account/:id" element={<Account />} />
           </Routes>
         </div>
       </HashRouter>
