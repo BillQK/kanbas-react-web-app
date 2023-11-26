@@ -7,6 +7,7 @@ import Project from "./project";
 import Signin from "./users/signin";
 import Account from "./users/account";
 import UserTable from "./users/table";
+import Signup from "./users/signup";
 function App() {
   return (
     <div>
@@ -19,6 +20,7 @@ function App() {
             <Route path="/Labs/*" element={<Labs />} />
             <Route path="/Kanbas/*" element={<Kanbas />} />
             <Route path="/signin" element={<Signin />} />
+            <Route path="/signup" element={<Signup />} />
             <Route path="/account" element={<Account />} />
             <Route path="/admin/users" element={<UserTable />} />
             <Route path="/account/:id" element={<Account />} />
