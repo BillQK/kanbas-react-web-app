@@ -21,7 +21,7 @@ function Account() {
   };
   const signout = async () => {
     await client.signout();
-    navigate("/project/signin");
+    navigate("/signin");
   };
 
   useEffect(() => {
